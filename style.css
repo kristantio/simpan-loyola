@@ -1,0 +1,119 @@
+  * {
+            box-sizing: cover;
+            margin: cover;
+            padding-bottom: cover;
+            padding-top: cover;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #1d1d1d 40%, #d4a023 100%);
+            color: white;
+            display: flex;
+            height: 100dvh;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+        }
+
+        .left-panel {
+            flex: 1;
+            padding: 60px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: linear-gradient(to bottom, #1d1d1d, #d4a023);
+            color: white;
+        }
+
+        .logo-row {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .logo-row img {
+            height: 60px;
+
+        }
+
+        h1 {
+            font-weight: 900;
+            font-size: 28px;
+            margin-bottom: 10px;
+
+        }
+
+        p {
+            font-size: 15px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid white;
+            padding: 10px;
+            margin-bottom: 20px;
+            color: white;
+            font-size: 16px;
+        }
+
+        input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .password-container {
+            position: relative;
+        }
+
+        .toggle-visibility {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: white;
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        .options input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        button {
+            background: #1d1d1d;
+            color: white;
+            padding: 14px;
+            border: none;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #333;
+        }
+
+        .right-panel {
+            flex: 1;
+            background: url('bg.png') center center no-repeat;
+            background-size: cover;
+        }
